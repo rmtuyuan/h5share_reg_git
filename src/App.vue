@@ -3,7 +3,7 @@
     <div class="reg-box">
 
       <div class="reg-phone-box">
-        <input type="tel" :maxlength="11" onkeypress="return event.keyCode>=48&&event.keyCode<=57" v-model.number="phoneNumber" placeholder="请输入手机号">
+        <input type="tel" onkeypress="return event.keyCode>=48&&event.keyCode<=57" :maxlength="11" v-model.number="phoneNumber" placeholder="请输入手机号">
       </div>
 
       <div class="pin-box">
@@ -147,11 +147,15 @@
     border: 1px solid #999;
     border-radius: .1rem;
     font-size: .32rem;
+   
   }
-
+input{
+   -webkit-appearance: none;
+}
   .reg-phone-box input{
     width: 100%;
     padding-left: .1rem;
+    background: #fff;
   }
 
   .reg-phone-box input:focus ,.pin-box input:focus{
@@ -170,13 +174,13 @@
     padding-left: .1rem;
     float: left;
     width: 65%;
+     background: #fff;
   }
   .pin-box button {
       float: right;
       font-size: .24rem;
       background: #fe416e;
       color: #fff;
-    
       border: 0;
       width: 32%;
   }
@@ -185,12 +189,11 @@
   }
   .submit-reg-btn-box button{
       width: 100%;
-        background: #ffbece;
+      background: #ffbece;
       color: #fff;
         border: 0;
   }
    .submit-reg-btn-box button.active{
-   
         background: #fe416e;
   
   }

@@ -1,9 +1,10 @@
 /* 改变主题色变量 */
 $base-color:#fe416e;
 $--color-primary: $base-color;
-  a,p,div,button,span,ul,li,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+  a,p,div,button,span,ul,li,input{-webkit-tap-highlight-color:rgba(255,0,0,0);  margin: 0;
+    padding: 0;}
 
-  body, div, a, span, ul, li, img ,input,button{
+  body, div, a, span, ul, li, img {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
     -webkit-user-drag: none;
